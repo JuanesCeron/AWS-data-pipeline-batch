@@ -1,6 +1,6 @@
 import requests
 import boto3
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Configuration
 
@@ -25,7 +25,7 @@ def fetch_and_upload_exoplanets():
     print("Data fetched successfully.")
 
     # Timestamp para versionado
-    execution_date = datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
+    execution_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     s3_key = f"{S3_PREFIX}/{execution_date}/exoplanets.csv"
 
     # Cliente S3
