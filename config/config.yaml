@@ -1,0 +1,26 @@
+project:
+  name: aws-data-pipeline-batch
+  environment: dev
+
+aws:
+  region: us-east-1
+  bucket: exoplanets-lakehouse-bucket
+
+paths:
+  bronze: bronze/exoplanets/
+  silver: silver/exoplanets/
+  gold: gold/planets_by_star/
+
+execution:
+  partition_column: execution_date
+
+data_source:
+  api_url: https://exoplanetarchive.ipac.caltech.edu/TAP/sync
+  format: csv
+  timeout_seconds: 60
+
+spark:
+  app_name: ExoplanetsPipeline
+  shuffle_partitions: 4
+  driver_memory: 2g
+  executor_memory: 2g

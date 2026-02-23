@@ -1,4 +1,7 @@
-.aws/
-.env
 __pycache__/
+*.pyc
+.env
+.aws/
 venv/
+logs/
+.DS_Store
