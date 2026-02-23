@@ -134,53 +134,39 @@ Gold layer is connected to Power BI using Amazon Athena as the data source.
 
 Example insights:
 
-Stars with most exoplanets
-
-Average planetary mass by system
-
-Distribution of planetary radius
+- Stars with most exoplanets
+- Average planetary mass by system
+- Distribution of planetary radius
 
 ---
 
 ## Key Engineering Concepts Demonstrated
 
-Lakehouse architecture
-
-Partitioned Parquet storage
-
-External tables in Athena
-
-Metadata management
-
-Batch processing
-
-Configuration-driven pipelines
-
-Cloud-native data analytics
+- Lakehouse architecture
+- Partitioned Parquet storage
+- External tables in Athena
+- Metadata management
+- Batch processing
+- Configuration-driven pipelines
+- Cloud-native data analytics
 
 ---
 
 ## Security
 
-No AWS credentials stored
-
-IAM-based authentication
-
-Data stored in S3 with partitioning strategy
+- No AWS credentials stored
+- IAM-based authentication
+- Data stored in S3 with partitioning strategy
 
 ---
 
 ## Future Improvements
 
-Infrastructure as Code (Terraform)
-
-CI/CD pipeline
-
-Data quality checks
-
-Airflow orchestration
-
-Glue Catalog integration
+- Infrastructure as Code (Terraform)
+- CI/CD pipeline
+- Data quality checks
+- Airflow orchestration
+- Glue Catalog integration
 
 ---
 
