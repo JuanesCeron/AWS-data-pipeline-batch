@@ -58,6 +58,8 @@ osrf-pycommon==2.1.7
 pal-statistics==2.7.0
 pal-statistics-msgs==2.7.0
 pcl-msgs==1.0.0
+py4j==0.10.9.7
+pyspark==3.5.1
 python-dateutil==2.9.0.post0
 python-qt-binding==2.2.2
 qt-gui==2.7.5
